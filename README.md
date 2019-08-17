@@ -46,7 +46,7 @@ returns the predicted outcome (0,1)
 returns the initialized parameters (e.g., discount rate, rho)
 
 *get_params*(self):
-returns the parameters (e.g., discount rate, rho)
+returns the estimated parameters (e.g., discount rate, rho)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
