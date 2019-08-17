@@ -1,7 +1,7 @@
 # DiscountEstimator
 A python program for estimating discount rates from several delay discounting models
 
-Built to be compatible with the scikit-learn library
+Built to be compatible with the scikit-learn library. Uses standard logistic regression (not default ridge like scikit-learn).
 
 Below are each model and the corresponding choice function used to estimate parameters.
 
@@ -50,7 +50,7 @@ returns the parameters (e.g., discount rate, rho)
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Discount rates are log transformed, rho is a determinism parameter
+Discount rates are log transformed, rho is a determinism parameter. Also estimates non-discounting parameters for the more complex models (e.g., non-linear transformation of delyay (s) in hyperbolic with exponent model , curvature of the discount function in generalized hyperbolic (theta))
 
 Works with reading in data as CSV
 
