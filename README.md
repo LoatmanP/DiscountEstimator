@@ -48,3 +48,10 @@ returns the initialized parameters (e.g., discount rate, rho)
 *get_params*(self):
 returns the parameters (e.g., discount rate, rho)
 
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Discount rates are log transformed, rho is a determinism parameter
+
+Works with reading in data as CSV
+
+Data must be structed as follows (column 1 = subject number, column 2 = SSR, column 3 = SSD, column 4= LLR, column 5 = LLD, column 6 = choice (0,1))
