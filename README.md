@@ -1,5 +1,5 @@
 # DiscountEstimator
-A python program for estimating discount rates from several delay discounting models
+A python program for estimating discount rates from several delay discounting models. Compatible with Python 2.7
 
 Built to be compatible with the scikit-learn library. Uses standard logistic regression (not default ridge like scikit-learn).
 
@@ -24,7 +24,7 @@ Quasi-Hyperbolic Discounting: Vd= V0δe^(-kd), L(α(x2δe^(-kt2) - x1δe^(-kt1))
 *fit*(self, X, y):
   X = smaller, sooner reward/delay; larger, later reward/delay
   y = choices (0,1)
-  optimization routine is scipy brute force with fmin finish
+  optimization routine is scipy brute force with local search finish
   return self
  
 *sse*(self, params, X,y):
@@ -54,4 +54,5 @@ Discount rates are log transformed, rho is a determinism parameter. Also estimat
 
 Works with reading in data as CSV
 
-Data must be structed as follows (column 1 = subject number, column 2 = SSR, column 3 = SSD, column 4= LLR, column 5 = LLD, column 6 = choice (0,1))
+X = SSR, SSD, LLR, LLD (data should be in that order)
+y = choice (0,1)
