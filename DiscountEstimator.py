@@ -1,12 +1,9 @@
 from __future__ import division
 import time
-from sklearn.model_selection import train_test_split
 import scipy.optimize
 import pickle, math, sys
-#from psychopy import gui, core
 from scipy.optimize import fmin
 import pandas as pd
-import pandas
 import numpy as np
 
 
