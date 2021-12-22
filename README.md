@@ -1,5 +1,5 @@
 # DiscountEstimator
-A python program for estimating discount rates from several delay discounting models. Compatible with Python 2.7
+A python program for estimating discount rates from several delay discounting models. Compatible with Python 2.7+
 
 Built to be compatible with the scikit-learn library. Uses standard logistic regression (not default ridge like scikit-learn).
 
